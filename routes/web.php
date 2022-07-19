@@ -25,10 +25,15 @@ Route::get('/', function () {
 
 //Single listing
 Route::get('/list{id}', function ($id) {
-   return view('listing', [
-       'heading' => 'Listing details',
-       'listing' => Listing::find($id)
-   ]);
+    $listing = Listing::find($id);
+    if ($listing != null) {
+        return view('listing', [
+            'heading' => 'Listing details',
+            'listing' => $listing
+        ]);
+    } else {
+        abort(404);
+    }
 });
 
 Route::get('/hello', function () {
