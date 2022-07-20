@@ -9,7 +9,7 @@
         />
         <div>
             <h3 class="text-2xl">
-                <a href="list{{$lst['id']}}">{{$lst['title']}}</a>
+                <a href="/listings/{{$lst['id']}}">{{$lst['title']}}</a>
             </h3>
             <div class="text-xl font-bold mb-4">{{$lst['company']}}</div>
             <!-- Tags here -->
