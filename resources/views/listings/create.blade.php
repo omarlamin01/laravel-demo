@@ -22,6 +22,7 @@
                         type="text"
                         class="border border-gray-200 rounded p-2 w-full"
                         name="company"
+                        value="{{old('company')}}"
                     />
                     @error('company')
                         <p class="text-red-500 text-xs mt-1">
@@ -38,6 +39,7 @@
                         type="text"
                         class="border border-gray-200 rounded p-2 w-full"
                         name="title"
+                        value="{{old('title')}}"
                         placeholder="Example: Senior Laravel Developer"
                     />
                     @error('title')
@@ -57,6 +59,7 @@
                         type="text"
                         class="border border-gray-200 rounded p-2 w-full"
                         name="location"
+                        value="{{old('location')}}"
                         placeholder="Example: Remote, Boston MA, etc"
                     />
                     @error('location')
@@ -74,6 +77,7 @@
                         type="text"
                         class="border border-gray-200 rounded p-2 w-full"
                         name="email"
+                        value="{{old('email')}}"
                     />
                     @error('email')
                     <p class="text-red-500 text-xs mt-1">
@@ -93,6 +97,7 @@
                         type="text"
                         class="border border-gray-200 rounded p-2 w-full"
                         name="website"
+                        value="{{old('website')}}"
                     />
                     @error('website')
                     <p class="text-red-500 text-xs mt-1">
@@ -109,6 +114,7 @@
                         type="text"
                         class="border border-gray-200 rounded p-2 w-full"
                         name="tags"
+                        value="{{old('tags')}}"
                         placeholder="Example: Laravel, Backend, Postgres, etc"
                     />
                     @error('tags')
@@ -139,6 +145,7 @@
                     <textarea
                         class="border border-gray-200 rounded p-2 w-full"
                         name="description"
+                        value="{{old('description')}}"
                         rows="10"
                         placeholder="Include tasks, requirements, salary, etc"
                     ></textarea>
